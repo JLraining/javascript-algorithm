@@ -1,5 +1,19 @@
 /**
- * 数组转换成二叉树
+ * 树的子节点只有左节点和右节点
+ */
+ const binaryTree1 = {
+   val: 1,
+   left: {
+     val: 2
+   },
+   right: {
+     val: 3
+   }
+ }
+
+/**
+ * 数组转换成排序二叉树 左节点最小 右节点最大
+ * 排序二叉树被广泛的应用在搜索引擎
  */
 class BinaryTree {
     constructor(array){
