@@ -13,9 +13,10 @@
 
 /**
  * 解题思路:
+ * 层序遍历。如果遇到没有子节点的叶子节点，直接返回结果
  */
 
- /**
+/**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
  *     this.val = (val===undefined ? 0 : val)
@@ -27,15 +28,21 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var minDepth = function(root) {
-    if(!root){return 0}
-    let queue = [[root, 1]];
-    while(queue.length) {
-        let [n ,i] = queue.shift();
-        if(!n.left && !n.right) {
-            return i
-        }
-        if(n.left) {queue.push([n.left, i+1])};
-        if(n.right) {queue.push([n.right, i+1])}
+var minDepth = function (root) {
+  if (!root) {
+    return 0;
+  }
+  let queue = [[root, 1]];
+  while (queue.length) {
+    let [n, i] = queue.shift();
+    if (!n.left && !n.right) {
+      return i;
     }
+    if (n.left) {
+      queue.push([n.left, i + 1]);
+    }
+    if (n.right) {
+      queue.push([n.right, i + 1]);
+    }
+  }
 };
