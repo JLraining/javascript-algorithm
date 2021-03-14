@@ -15,7 +15,7 @@
  * 所以思路是把当前节点的后一个节点的值赋给当前节点, 当前节点的指针指向下一个节点的下一个节点 （先交换后删除）
  */
 
-var deleteNode = function(node) {
-    node.val = node.next.val;
-    node.next = node.next.next;
+var deleteNode = function (node) {
+  node.val = node.next.val;
+  node.next = node.next.next;
 };
