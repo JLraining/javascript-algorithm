@@ -1,5 +1,5 @@
 /**
- * 二叉树的先序遍历
+ * 二叉树的先序遍历 // 深度优先
  * 思路：
  * 1. 访问根节点
  * 2. 左子树先序遍历
@@ -17,7 +17,7 @@
 const preOrder2 = (root) => {
     const stack = [];
     stack.push(root);
-    while(stack.left) {
+    while(stack.length) {
         const n = stack.pop();
         console.log(n.val);
         n.right && stack.push(n.right);
