@@ -16,7 +16,7 @@
  * ]
  */
 
- /**
+/**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
  *     this.val = (val===undefined ? 0 : val)
@@ -28,15 +28,19 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
-var levelOrder = function(root) {
-    if(!root) return [];
-    let queue = [[root, 0]];
-    let res = [];
-    while(queue.length) {
-        let [n , i] = queue.shift();
-        res[i] ? res[i].push(n.val) : res.push([n.val]);
-        if(n.left) { queue.push([n.left, i+1]) };
-        if(n.right) { queue.push([n.right, i+1])};
+var levelOrder = function (root) {
+  if (!root) return [];
+  let queue = [[root, 0]];
+  let res = [];
+  while (queue.length) {
+    let [n, i] = queue.shift();
+    res[i] ? res[i].push(n.val) : res.push([n.val]);
+    if (n.left) {
+      queue.push([n.left, i + 1]);
     }
-    return res
+    if (n.right) {
+      queue.push([n.right, i + 1]);
+    }
+  }
+  return res;
 };
