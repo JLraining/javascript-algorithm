@@ -18,13 +18,14 @@ array2.add(6);
 // 删除
 array2.delete(6);
 // 遍历：Set的遍历顺序就是插入顺序
-for(let val of array2.values()) {console.log(val)}
+for(let val of array2.values()) {}
 // 判断元素是否在集合中
 const has = new Set(arr1).has(3);
-
+console.log(new Set(arr1).size)
 
 // 去重
 const arr3 = [...new Set(arr1)];
+
 // 判断交集
 const set2 = new Set([1, 2, 3]);
 const res = new Set([...set2].filter((item) => array2.has(item)));

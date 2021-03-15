@@ -26,7 +26,7 @@ class BinaryTree {
       if(this.root === null) {
         this.root = node;
       } else {
-        insertNode(root, node)
+        insertNode(this.root, node)
       }
     }
     
