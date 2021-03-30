@@ -32,7 +32,6 @@ var pacificAtlantic = function (matrix) {
 
   const dfs = (r, c, flow) => {
     flow[r][c] = true;
-
     [
       [r - 1, c],
       [r + 1, c],
