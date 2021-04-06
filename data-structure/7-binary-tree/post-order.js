@@ -8,29 +8,28 @@
 
 // 【递归实现】
 const postOrder = (root) => {
-    root.left && postOrder(root.left);
-    root.right && postOrder(root.right);
-    console.log(root.val);
-  };
-  
-  // 【非递归实现】
-  const postOrder2 = (root) => {
-    if (!root) {
-      return;
-    }
-    const stack = [ root ];
-    const outputStack = [];
+  root.left && postOrder(root.left);
+  root.right && postOrder(root.right);
+  console.log(root.val);
+};
 
-    while(stack.length) {
-        const n = stack.pop();
-        outputStack.push(n);
-        n.left && stack.push(n.left);
-        n.right && stack.push(n.right);
-    }
+// 【非递归实现】
+const postOrder2 = (root) => {
+  if (!root) {
+    return;
+  }
+  const stack = [root];
+  const outputStack = [];
 
-    while(outputStack.length) {
-        const n = outputStack.pop();
-        console.log(n.val);
-    }
-  };
-  
+  while (stack.length) {
+    const n = stack.pop();
+    outputStack.push(n);
+    n.left && stack.push(n.left);
+    n.right && stack.push(n.right);
+  }
+
+  while (outputStack.length) {
+    const n = outputStack.pop();
+    console.log(n.val);
+  }
+};

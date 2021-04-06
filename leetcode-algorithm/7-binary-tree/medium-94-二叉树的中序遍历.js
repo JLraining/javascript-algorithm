@@ -1,26 +1,32 @@
 /**
- * 题目描述: 给定一个二叉树的根节点 root，返回它的 中序 遍历。
+ * 二叉树的中序遍历
+ * 思路：
+ * 1. 左子树中序遍历
+ * 2. 访问根节点
+ * 3. 右子树中序遍历
  */
 
-/**
- * 解题思路: 左右根。使用非递归实现 【背】
- */
+// 【递归实现】
+const inOrder = (root) => {
+  root.left && inOrder(root.left);
+  console.log(root.val);
+  root.right && inOrder(root.right);
+};
 
-var inorderTraversal = function (root) {
-  if (!root) return [];
-  let stack = [];
-  let res = [];
+// 【非递归实现】
+const inOrder2 = (root) => {
+  if (!root) {
+    return;
+  }
+  const stack = [];
   let p = root;
-
   while (stack.length || p) {
     while (p) {
       stack.push(p);
       p = p.left;
     }
-    let n = stack.pop();
-    res.push(n.val);
+    const n = stack.pop();
+    console.log(n.val);
     p = n.right;
   }
-
-  return res;
 };
