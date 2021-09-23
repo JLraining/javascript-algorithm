@@ -12,22 +12,19 @@
  * 性能比较差, 一般实际情况下不会用到, 只有面试的时候会问
  */
 
-const insertionSort = (arr) => {
-  for (i = 1; i < arr.length; i++) {
+ function insertionSort(arr) {
+  for(let i = 1; i < arr.length; i++) {
     let j = i;
-    const temp = arr[j];
-
-    while (j > 0) {
-      if (arr[j - 1] > temp) {
-        arr[j] = arr[j - 1];
+    while(j > 0) {
+      if(arr[j] < arr[j - 1]) {
+        [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]]
+        j--
       } else {
         break;
       }
-      arr[j - 1] = temp;
-      j--;
     }
   }
-};
+}
 
 let arr = [6, 9, 3, 0, 9, 4, 1, 7, 0, 3, 2, 9, 8, 0, 9];
 insertionSort(arr);
