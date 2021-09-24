@@ -21,7 +21,7 @@ function threeSum(nums: number[]): number[][] {
         if (arr[i] === arr[i - 1]) {
           continue;
         }
-        let p1 = i + 1;
+        let p1 = i + 1; 
         let p2 = arr.length - 1;
         while (p2 > p1) {
           if (arr[i] === -(arr[p1] + arr[p2])) {
