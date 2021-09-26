@@ -21,6 +21,7 @@
 /**
  * solution:
  * use map && sliding window
+ * pay attention to the use of map that record the index of the char
  */
 
  function lengthOfLongestSubstring2(s: string): number {
