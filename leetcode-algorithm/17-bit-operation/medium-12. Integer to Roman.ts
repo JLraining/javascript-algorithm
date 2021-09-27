@@ -33,6 +33,11 @@
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 
+/**
+ * Solution:
+ * use hash map
+ */
+
 function intToRoman(num: number): string {
     let hashMap: Array<string[]> = [
         ['', "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
