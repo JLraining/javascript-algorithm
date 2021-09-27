@@ -23,7 +23,7 @@
 
 /**
  * It's very hot 
- * find the regular pattern， use Recursion to implement
+ * find the regular pattern， use recursion to implement
  */
  function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
     if(!preorder || !preorder.length || !inorder || !inorder.length) {
