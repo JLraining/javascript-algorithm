@@ -19,7 +19,7 @@ class ListNode {
         this.next = (next === undefined ? null : next)
     }
 }
-
+// 【 hot leetcode question】
 /**
  * my solution
  */
