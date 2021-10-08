@@ -17,6 +17,7 @@
 /**
  * solution
  * sliding window
+ * 
  */
 function lengthOfLongestSubstringTwoDistinct(s: string): number {
     if (!s) {
