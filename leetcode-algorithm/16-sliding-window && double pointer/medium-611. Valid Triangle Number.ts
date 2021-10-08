@@ -19,6 +19,7 @@
  * order + double pointer
  * fix one situation
  * then use two pointer: j & k.  find the biggest k to meet "nums[i] + nums[j] > nums[k]"
+ * pay attetion to the doundary situation: number equal to zero.
  */
 
 function triangleNumber(nums: number[]): number {
