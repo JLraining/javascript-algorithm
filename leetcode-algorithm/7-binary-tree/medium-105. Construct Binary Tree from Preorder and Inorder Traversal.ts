@@ -25,8 +25,8 @@
  * It's very hot 
  * find the regular pattern， use recursion to implement
  */
- function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
-    if(!preorder || !preorder.length || !inorder || !inorder.length) {
+function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
+    if (!preorder || !preorder.length || !inorder || !inorder.length) {
         return null;
     }
     const cur: number = preorder.shift();
@@ -36,3 +36,4 @@
     curNode.right = buildTree(preorder, inorder.slice(inIndex + 1));
     return curNode;
 };
+
