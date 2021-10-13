@@ -25,7 +25,6 @@ function minMeetingRooms(intervals: number[][]): number {
     if (!intervals || intervals.length === 0) {
         return 0;
     }
-    let res: number = 1;
     intervals = intervals.sort((a, b) => a[0] - b[0]);
 
     class Heap {
