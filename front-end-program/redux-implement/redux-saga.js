@@ -39,10 +39,10 @@ const fetchData = (text) => (dispatch) => {
 const sagaMiddleware = createSagaMiddleware();
 store = createStore(rootReducer, applyMiddleware(sagaMiddleware, logger));
 
-sagaMiddleware.run(rootSaga)
+sagaMiddleware.run(rootSaga);
 
 //rootSaga.js
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Our worker Saga: 将异步执行 increment 任务
 function* addAsync(action) {
