@@ -33,3 +33,27 @@ const res = new Set([...set2].filter((item) => array2.has(item)));
 const res2 = new Set([...set2].filter((item) => !array2.has(item)));
 
 console.log(res, res2);
+
+// 遍历
+let set = new Set(['red', 'green', 'blue']);
+
+for (let item of set.keys()) {
+  console.log(item);
+}
+// red
+// green
+// blue
+
+for (let item of set.values()) {
+  console.log(item);
+}
+// red
+// green
+// blue
+
+for (let item of set.entries()) {
+  console.log(item);
+}
+// ["red", "red"]
+// ["green", "green"]
+// ["blue", "blue"]
