@@ -2,7 +2,7 @@
 const useCountDowm = (leftTime, options) => {
     let [ leftTime, setLeftTime ] = useState(initTime);
     const { onEnd , setInterval = 1000} = options;
-    
+
     useEffect({
         const timer = setInterval(() => {
             setLeftTime(leftTime => {
@@ -18,5 +18,5 @@ const useCountDowm = (leftTime, options) => {
         return () => clearInterval(timer);
     }, []);
 
-    return [ leftTime ];
+    return leftTime;
 }

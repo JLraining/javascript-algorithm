@@ -1,7 +1,7 @@
 /**
  * 实现一个累加函数 如 add(1)(2,3)() 或 add(1)(2,3).finish() 输出6
  */
-
+ // [JS - 生成随机数的方法汇总（不同范围、类型的随机数） - 云+社区 - 腾讯云](https://cloud.tencent.com/developer/article/1629795)
 function add(...args) {
   var cache = 0;
   if (args.length) {
