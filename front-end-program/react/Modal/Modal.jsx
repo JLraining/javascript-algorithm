@@ -15,7 +15,6 @@ export default function Portal({ children }) {
 
 
 export default function Modal() {
-
     return (
         <React.Fragment>
           {(open || active) && (
