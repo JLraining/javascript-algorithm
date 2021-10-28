@@ -12,7 +12,8 @@
 
 /**
  * solution:
- * 反转链表 + 两数相加
+ * 解法1： 反转链表 + 两数相加
+ * 解法2： （不允许反转链表）使用栈, 利用栈 后进先出的特点
  */
 
 /**
@@ -28,6 +29,7 @@
      }
  }
 
+ // 我的解答 反转链表
  function addTwoNumbers2(l1: ListNode | null, l2: ListNode | null): ListNode | null {
     if(!l1) {
         return l2;
@@ -76,4 +78,34 @@
 
     // 翻转相加的结果
     return reverse(head.next)
+};
+
+
+// 解法2 使用栈
+var addTwoNumbers3 = function(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+    const stack1: number[] = [];
+    const stack2: number[]  = [];
+    while (l1 || l2) {
+        if (l1) {
+            stack1.push(l1.val);
+            l1 = l1.next;
+        }
+        if (l2) {
+            stack2.push(l2.val);
+            l2 = l2.next;
+        }
+    }
+    let carry: number = 0;
+    let ansList: ListNode | null = null;
+    while (stack1.length || stack2.length || carry !== 0) {
+        const s1: number = stack1.length ? stack1.pop() : 0;
+        const s2: number = stack2.length ? stack2.pop() : 0;
+        let val: number  = s1 + s2 + carry;
+        carry = Math.floor(val / 10);
+        val = val % 10;
+        const curNode: ListNode | null= new ListNode(val);
+        curNode.next = ansList;
+        ansList = curNode;
+    }
+    return ansList;
 };
