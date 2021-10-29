@@ -53,6 +53,7 @@ data-structure and algorithm implemented by javascript
   * [经典实用场景](https://github.com/JLraining/javascript-algorithm/blob/main/leetcode-algorithm/11-back-tracking/medium-78-%E5%AD%90%E9%9B%86.js)
 
 ### 3. leetcode从简单到难的分类练习
+分类练习，分类可以按照我下图的推荐
 总结了一些典型例题,先不看答案,在leetcode搜索题号自己做一下。
 建议典型的题和算法思想一定要深刻理解, 常看常新, 可以建立自己仓库每次面试之前看一遍。
 
@@ -61,7 +62,7 @@ data-structure and algorithm implemented by javascript
 ![image](https://user-images.githubusercontent.com/13096392/139360952-ec0c3768-ecdd-4c62-bd76-2fa8518c00c8.png)
 
 ### 4. 刷leetcode hot 100 && 剑指offer
-都是比较经典的题型, 覆盖各种数据结构和算法思想
+系统的练习。都是比较经典的题型, 覆盖各种数据结构和算法思想。碰到原题或者原题变种题的概率非常高。
 * [LeetCode 热题 HOT 100](https://leetcode-cn.com/problem-list/2cktkvj/)
 * [剑指 Offer（第 2 版）](https://leetcode-cn.com/problem-list/xb9nqhhg/)
 
