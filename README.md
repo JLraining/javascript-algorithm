@@ -54,7 +54,9 @@ data-structure and algorithm implemented by javascript
 
 ### 3. leetcode从简单到难的分类练习
 分类练习，分类可以按照我下图的推荐
+
 总结了一些典型例题,先不看答案,在leetcode搜索题号自己做一下。
+
 建议典型的题和算法思想一定要深刻理解, 常看常新, 可以建立自己仓库每次面试之前看一遍。
 
 [leetcode-algorithm](https://github.com/JLraining/javascript-algorithm/tree/main/leetcode-algorithm)
