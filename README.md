@@ -64,7 +64,7 @@ data-structure and algorithm implemented by javascript
 ![image](https://user-images.githubusercontent.com/13096392/139360952-ec0c3768-ecdd-4c62-bd76-2fa8518c00c8.png)
 
 ### 4. 刷leetcode hot 100 && 剑指offer
-系统的练习。都是比较经典的题型, 覆盖各种数据结构和算法思想。碰到原题或者原题变种题的概率非常高。
+系统的练习。都是比较经典的题型, 覆盖各种数据结构和算法思想。中资大厂面试碰到原题或者原题变种题的概率非常高。
 * [LeetCode 热题 HOT 100](https://leetcode-cn.com/problem-list/2cktkvj/)
 * [剑指 Offer（第 2 版）](https://leetcode-cn.com/problem-list/xb9nqhhg/)
 
