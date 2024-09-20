@@ -15,6 +15,8 @@
  *   4. 刷新记录保留的字符串长度, 不断和上次比较, 保留最大值
  */
 
+// 重点在于map维护当前坐标 看当前字符的位置是否在窗口内
+
 var lengthOfLongestSubstring = function (s) {
   let p1 = 0;
   const map = new Map();
@@ -29,5 +31,3 @@ var lengthOfLongestSubstring = function (s) {
 
   return res;
 };
-
-

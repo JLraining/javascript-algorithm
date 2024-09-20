@@ -18,8 +18,8 @@
 // Input: s = "a(bcdefghijkl(mno)p)q"
 // Output: "apmnolkjihgfedcbq"
 
-/**
- * It's a hot question.
+/** 
+ * It's a hot question. 做出来了但是卡，找类似的再做做
  * solution 1:
  * use stack (I had hesitated for a long time at this step)
  * we traverse this string from left to right, use 'str' to record the characters at current layer, for current character:

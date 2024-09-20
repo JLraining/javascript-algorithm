@@ -37,6 +37,13 @@ console.log(res, res2);
 // 遍历
 let set = new Set(['red', 'green', 'blue']);
 
+for (let item of set) {
+  console.log(item);
+}
+// red
+// green
+// blue
+
 for (let item of set.keys()) {
   console.log(item);
 }

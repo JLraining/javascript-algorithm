@@ -17,18 +17,6 @@
  * 2. 快慢指针 一个指针走一步 另一个指针走两步 如果相遇 说明有环 时间复杂度：O(N) 空间复杂度：O(1)
  */
 
-var hasCycle = function (head) {
-  let set = new Set();
-  while (head) {
-    if (set.has(head)) {
-      return true;
-    }
-    set.add(head);
-    head = head.next;
-  }
-  return false;
-};
-
 // 【优化】
 var hasCycle2 = function (head) {
   let p1 = head;

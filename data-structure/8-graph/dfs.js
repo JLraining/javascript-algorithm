@@ -21,3 +21,32 @@ const dfs = (n) => {
       }
     });
 };
+
+export default function depthFirstSearch(graph, source) {
+  // If there are no nodes in the graph, just return an empty array
+  if (Object.keys(graph).length === 0) {
+    return [];
+  }
+
+  // Initialize a set that tracks visited nodes.
+  const visited = new Set();
+
+  function traverse(node) {
+    // Visited before, we can ignore.
+    if (visited.has(node)) {
+      return;
+    }
+
+    visited.add(node);
+    // Recursively visit each neighbor.
+    graph[node].forEach((neighbor) => {
+      traverse(neighbor);
+    });
+  }
+
+  // Start traversing from the source.
+  traverse(source);
+
+  // The visited nodes is the traversal order.
+  return Array.from(visited);
+}

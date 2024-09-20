@@ -13,21 +13,6 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
-var deleteDuplicates = function (head) {
-  var set = new Set();
-  var l3 = new ListNode(0);
-  var p = l3;
-
-  while (head) {
-    if (!set.has(head.val)) {
-      set.add(head.val);
-      p.next = new ListNode(head.val);
-      p = p.next;
-    }
-    head = head.next;
-  }
-  return l3.next;
-};
 
 // 【优化】
 var deleteDuplicates = function (head) {

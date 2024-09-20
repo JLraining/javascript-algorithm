@@ -16,6 +16,7 @@
  * 由于「0 和 1 的数量相同」等价于「1 的数量减去 0 的数量等于 0」，我们可以将数组中的 0 视作 -1，则原问题转换成「求最长的连续子数组，其元素和为 0」
  */
 
+
 function findMaxLength(nums: number[]): number {
     let prefixNums: number[] = new Array(nums.length).fill(0);
     let prefixMap: Map<number, number> = new Map();
